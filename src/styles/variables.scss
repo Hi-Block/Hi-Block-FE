@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+$Inter: "Inter", sans-serif;
+
+// colors
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$hyblue: #0E4A84;
+$hysilver: #898C8E;
+$bg: rgb(254, 254, 255);
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 80px;
+
+// footer height
+$footerHeight: 120px;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        // 768px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}
