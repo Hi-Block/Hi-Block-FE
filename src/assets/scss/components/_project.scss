@@ -1,0 +1,41 @@
+.project-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 4999;
+
+
+    .common-inner {
+        display: flex;
+        flex-direction: column;
+
+        .title-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+            .title {
+                line-height: 140px;
+                text-align: center;
+                font-size: 96px;
+                font-weight: 700;
+            }
+    
+            .description {
+                line-height: 60px;
+                font-size: 40px;
+                font-weight: 700;
+                .eng {
+                    font-family: $font-eng;
+                }
+                .kr {
+                    font-family: $font-kr;
+                }
+            }
+        }
+    }
+}
