@@ -1,0 +1,23 @@
+.sub-nav-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    width: 100%;
+
+    .sub-nav-item {
+        width: 150px;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: $block-color-text2;
+    }
+
+    .sub-nav-blank {
+        width: 30px;
+    }
+}

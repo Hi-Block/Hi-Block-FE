@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $block-color-bg1;
+}
+
+.common-inner {
+    margin: 0 auto;
+}
