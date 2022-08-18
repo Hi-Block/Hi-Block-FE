@@ -11,6 +11,7 @@ import Member from './pages/Member';
 
 // COMPONENTS
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const env = process.env;
@@ -26,6 +27,7 @@ function App() {
           <Route path='/project' element={<Project />}/>
           <Route path='/member' element={<Member />}/>
         </Routes>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

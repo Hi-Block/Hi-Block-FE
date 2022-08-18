@@ -9,6 +9,7 @@
 
 //COMPONENTS
 @import "./components/buttons";
+@import "./components/medium_card";
 @import "./components/pagination";
 @import "./components/project_item";
 @import "./components/project_list";
@@ -18,6 +19,8 @@
 @import "./layout/footer";
 @import "./layout/header_navigation_bar";
 @import "./layout/sub_navigation_bar";
+@import "./layout/footer";
 
 // PAGES
+@import "./pages/Article";
 @import "./pages/common";
