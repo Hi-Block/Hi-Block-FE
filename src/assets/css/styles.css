@@ -147,6 +147,88 @@ textarea::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+.main-title-area {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 1920px;
+  height: 1080px;
+  z-index: 4999;
+}
+.main-title-area .common-inner {
+  display: flex;
+  margin-top: 120px;
+  flex-direction: column;
+}
+.main-title-area .common-inner .title-area {
+  display: flex;
+  flex-direction: column;
+}
+.main-title-area .common-inner .title-area .slogan-and-title {
+  display: flex;
+  flex-direction: column;
+}
+.main-title-area .common-inner .title-area .slogan-and-title .slogan {
+  line-height: 77px;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  color: #4E5968;
+}
+.main-title-area .common-inner .title-area .slogan-and-title .title {
+  line-height: 234px;
+  font-size: 200px;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  color: #0E4A84;
+}
+.main-title-area .common-inner .title-area .about-area {
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+}
+
+.main-about-area {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 1920px;
+  height: 1080px;
+  z-index: 4999;
+}
+.main-about-area .common-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+}
+.main-about-area .common-inner .image-area {
+  width: 480px;
+  height: 1080px;
+}
+.main-about-area .common-inner .text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+.main-about-area .common-inner .text-area .title {
+  line-height: 75px;
+  font-size: 64px;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  color: #000000;
+}
+.main-about-area .common-inner .text-area .description {
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", serif;
+  color: #4E5968;
+}
+
 .btn-language {
   padding-left: 8px;
   padding-right: 8px;
@@ -829,4 +911,4 @@ textarea::-webkit-outer-spin-button {
     flex-flow: row;
     align-items: center;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
