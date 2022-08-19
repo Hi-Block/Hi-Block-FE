@@ -1,0 +1,101 @@
+.footer {
+	background-color: $block-color-bg3;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 7.5rem;
+	gap: 1rem;
+	padding: 0 10vw 0 10vw;
+	position: relative;
+	z-index: 0;
+
+	.footer-content {
+		overflow: hidden;
+        color: $block-color-text1;
+        max-width: 120rem;
+        display: flex;
+		flex-direction: row;
+        align-items: stretch;
+		gap: 4rem;
+		justify-content: space-between;
+        position: relative;
+        z-index: 100;
+
+		@include breakpoint(md) {
+			transform: none;
+			gap: 0.5rem;
+			background: transparent;
+			width: auto;
+			position: static;
+			align-items: center;
+		}
+
+		.footer-content-left {
+			.footer-content-logo {
+				display: flex;
+				align-items: center;
+				width: 4rem;
+				height: 4rem;
+				border-radius: 10px;
+			}
+		}
+
+		.footer-content-textWrap {
+			display: none;
+			.name {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 24px;
+				align-items: center;
+				text-align: center;
+				color: $block-color-text1;
+			}
+			.slogan {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				align-items: center;
+				text-align: center;
+				color: $block-color-text1;
+			}
+
+			@include breakpoint(md) {
+				display: inline;
+			}
+		}
+		
+		.footer-content-blank {
+			height: 1rem;
+			width: 30vw;
+			display: none;
+
+			@include breakpoint(md) {
+				display: inline;
+			}
+		}
+
+		.footer-content-socialIcons {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			color: $block-color-bg1;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 24px;
+
+			i {
+				color: $block-color-bg1;
+				width: 2rem;
+				height: 2rem;
+				align-items: center;
+			}
+		}
+	}
+}
