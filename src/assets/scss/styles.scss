@@ -11,9 +11,11 @@
 @import "./components/buttons";
 @import "./components/medium_card";
 @import "./components/pagination";
+@import "./components/profile";
 @import "./components/project_item";
 @import "./components/project_list";
 @import "./components/project";
+@import "./components/scroll_top";
 
 // LAYOUTS
 @import "./layout/footer";
@@ -22,5 +24,6 @@
 @import "./layout/footer";
 
 // PAGES
-@import "./pages/Article";
+@import "./pages/article";
 @import "./pages/common";
+@import "./pages/member";

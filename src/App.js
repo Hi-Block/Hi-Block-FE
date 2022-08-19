@@ -12,6 +12,7 @@ import Member from './pages/Member';
 // COMPONENTS
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollTop from './components/ScrollTop';
 
 function App() {
   const env = process.env;
@@ -27,6 +28,7 @@ function App() {
           <Route path='/project' element={<Project />}/>
           <Route path='/member' element={<Member />}/>
         </Routes>
+        <ScrollTop />
         <Footer/>
       </div>
     </BrowserRouter>

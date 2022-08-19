@@ -1,0 +1,22 @@
+.scroll-container{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 1;
+
+    .scroll-container-top{
+        font-weight: bold;
+        font-size: 15px;
+        width: 2rem;
+        height: 2rem;
+        background-color: #D9D9D9;
+        border: 0;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+
+        &:hover{
+            color :#0E4A84;
+        }
+    }
+}
