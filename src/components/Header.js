@@ -1,3 +1,4 @@
+// Navigation Item mapping with Component 'HeaderNavItem'
 import { Link } from 'react-router-dom';
 
 // COMPONENT
