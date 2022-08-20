@@ -8,9 +8,9 @@
 @import "./base/typography";
 
 //COMPONENTS
+@import "./components/buttons";
 @import "./components/main_title";
 @import "./components/main_about";
-@import "./components/buttons";
 @import "./components/medium_card";
 @import "./components/pagination";
 @import "./components/profile";
@@ -23,7 +23,6 @@
 @import "./layout/footer";
 @import "./layout/header_navigation_bar";
 @import "./layout/sub_navigation_bar";
-@import "./layout/footer";
 
 // PAGES
 @import "./pages/article";

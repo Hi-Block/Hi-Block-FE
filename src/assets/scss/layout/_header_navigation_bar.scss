@@ -1,4 +1,3 @@
-// 남은 작업 : 커서 올렸을 때 글자 색 변화 및 애니메이션 스타일링 
 .header-area {
     top: 0;
     display: flex;
@@ -37,12 +36,17 @@
                     margin-left: 20px;
                     margin-right: 20px;
                     height: 80px;
-                    
+
                     .nav-item {
                         font-size: 20px;
                         color: $block-color-text2;
                         padding-left: 16px;
                         padding-right: 16px;
+                        cursor: pointer;
+                        
+                        // &.is-active {
+                        //     color: $block-color-text1;
+                        // }
                     }
 
                 }
