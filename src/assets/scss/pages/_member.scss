@@ -1,0 +1,107 @@
+.Member {
+    height: auto;
+    background: $block-color-bg1;
+    display: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem;
+    gap: 2rem;
+    font-family: $Inter;
+
+    .Member-title {
+        width: 100%;
+        gap:0;
+        margin-top: 10vh;
+        padding: 0.5rem 0.5rem;
+        font-family: $Inter;
+
+        .Member-title-main {
+            font-size: 3rem;
+        }
+
+        .Member-title-sub {
+            font-size: 1.5rem;
+        }
+    }
+
+    .Member-subNavigation {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 1rem 0;
+        gap: 2.5rem;
+
+        .Member-subNavigation-wrap1 {
+            width: 8rem;
+            height: 2rem;
+
+            .wrap1-current {
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 0 0;
+                border-radius: 0.5rem;
+                font-family: $Inter;
+                font-size: 0.9rem;
+                background-color: $block-color-bg4;
+
+                &:disabled {
+                    background-color: $block-color-bg1;
+                }
+            }
+        }
+
+        .Member-subNavigation-wrap2 {
+            width: 8rem;
+            height: 2rem;
+
+            .wrap2-alumni {
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 0 0;
+                border-radius: 0.5rem;
+                font-family: $Inter;
+                font-size: 0.9rem;
+                background-color: $block-color-bg1;
+
+                &:disabled {
+                    background-color: $block-color-bg1;
+                }
+            }
+        }
+    }
+
+    .Member-container {
+        align-items: center;
+        max-width: 70rem;
+        width: 100%;
+
+        .Member-container-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 3rem 0 3rem;
+
+            .Member-container-wrapper-items {
+                display: flex;
+                flex-flow: column;
+                text-decoration: none;
+                padding: 0 0 0 0;
+                margin-bottom: 1.5rem;
+                gap: 1.5rem;
+                align-items: center;
+                
+
+                @include breakpoint(md) {
+                    flex-flow: row;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

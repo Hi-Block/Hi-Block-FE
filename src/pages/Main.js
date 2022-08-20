@@ -1,7 +1,12 @@
+import MainTitle from "../components/MainTitle";
+import MainAbout from "../components/MainAbout";
 const Main = () => {
-    return (
-        <h1>MainPage</h1>
-    );
-}
+  return (
+    <div>
+      <MainTitle />
+      <MainAbout />
+    </div>
+  );
+};
 
 export default Main;
