@@ -1,4 +1,4 @@
-// Header menu items data
+// Header menu item data 
 
 export const navItem = [
     {
