@@ -148,87 +148,141 @@ textarea::-webkit-outer-spin-button {
 }
 
 .main-title-area {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  width: 1920px;
-  height: 1080px;
-  z-index: 4999;
+  height: auto;
+  background: #FFFFFF;
+  display: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin: 5rem 3rem 15rem;
 }
 .main-title-area .common-inner {
-  display: flex;
-  margin-top: 120px;
-  flex-direction: column;
+  width: 100%;
 }
 .main-title-area .common-inner .title-area {
   display: flex;
   flex-direction: column;
 }
-.main-title-area .common-inner .title-area .slogan-and-title {
-  display: flex;
-  flex-direction: column;
-}
-.main-title-area .common-inner .title-area .slogan-and-title .slogan {
-  line-height: 77px;
-  font-size: 64px;
+.main-title-area .common-inner .title-area .slogan {
+  margin-left: 0.5rem;
+  font-size: 4rem;
   font-weight: 700;
   font-family: "Roboto", serif;
   color: #4E5968;
 }
-.main-title-area .common-inner .title-area .slogan-and-title .title {
-  line-height: 234px;
-  font-size: 200px;
+.main-title-area .common-inner .title-area .title {
+  font-size: 12rem;
   font-weight: 700;
   font-family: "Roboto", serif;
   color: #0E4A84;
 }
-.main-title-area .common-inner .title-area .about-area {
+.main-title-area .common-inner .about-area {
   display: flex;
   flex-direction: row;
   height: 170px;
 }
 
 .main-about-area {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  width: 1920px;
-  height: 1080px;
-  z-index: 4999;
+  height: auto;
+  background: #FFFFFF;
+  display: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 5rem;
 }
 .main-about-area .common-inner {
-  display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 30px;
 }
 .main-about-area .common-inner .image-area {
-  width: 480px;
-  height: 1080px;
+  width: 100%;
+  height: 12rem;
+  background-image: url(/public/images/Logo-Circle.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10rem;
 }
 .main-about-area .common-inner .text-area {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 40px;
+  align-items: left;
+  text-align: center;
+  gap: 2rem;
 }
 .main-about-area .common-inner .text-area .title {
-  line-height: 75px;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 300;
   font-family: "Roboto", serif;
   color: #000000;
 }
 .main-about-area .common-inner .text-area .description {
-  line-height: 28px;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 500;
   font-family: "Noto Sans KR", serif;
   color: #4E5968;
 }
 
+.main-content {
+  height: auto;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 2rem;
+}
+.main-content .left-content-area {
+  width: 100%;
+}
+.main-content .right-content-area {
+  width: 100%;
+}
+.main-content .gallery-text {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .gallery-text .text-title {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.main-content .gallery-text .text-body {
+  color: #4E5968;
+  font-size: 0.5rem;
+  font-weight: 100;
+}
+.main-gallery {
+  height: auto;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-gallery .main-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-gallery .gallery-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-gallery .gallery-text .text-title {
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Noto Sans KR", serif;
+}
+.main-gallery .gallery-text .text-body {
+  color: #4E5968;
+  font-size: 0.5rem;
+  font-weight: 100;
+}
 .btn-language {
   padding-left: 8px;
   padding-right: 8px;
