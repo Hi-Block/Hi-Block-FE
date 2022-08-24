@@ -8,6 +8,7 @@ import Main from "./pages/Main";
 import Article from "./pages/Article";
 import Project from "./pages/Project";
 import Member from "./pages/Member";
+import Recruit from "./pages/Recruit";
 
 // COMPONENTS
 import Header from "./components/Header";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/article" element={<Article />} />
           <Route path="/project" element={<Project />} />
           <Route path="/member" element={<Member />} />
+          <Route path="/recruit" element={<Recruit />} />
         </Routes>
         <ScrollTop />
         <Footer />

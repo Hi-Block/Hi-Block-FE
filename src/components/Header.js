@@ -1,7 +1,15 @@
+// Navigation Item mapping with Component 'HeaderNavItem'
 import { Link } from 'react-router-dom';
+
+// COMPONENT
 import Button from "./Button";
+import HeaderNavItem from './HeaderNavItem';
+
+// UTILS
+import { navItem } from '../utils/navItem';
 
 const Header = () => {
+    
     return (
         <header className="header-area">
             <div className="nav-area">
@@ -16,14 +24,15 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="nav-item-wrapper">
-                        <ul className="nav-item-set">
-                            <li className='nav-item'><Link to={'/'}>Main</Link></li>
-                            <li className='nav-item'><Link to={'/article'}>Article</Link></li>
-                            <li className='nav-item'><Link to={'/project'}>Project</Link></li>
-                            <li className='nav-item'><Link to={'/member'}>Member</Link></li>
-                            {/* Recruit click => mainpage 하단으로 이동 설정 작업 필요 */}
-                            <li className='nav-item'>Recruit</li>
-                        </ul>
+                        <div className="nav-item-set">
+                            {navItem.map((it) => (
+                                <HeaderNavItem 
+                                    key={it.id}
+                                    content={it.content}
+                                    address={it.address}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="nav-bar-right">
