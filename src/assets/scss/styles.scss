@@ -12,6 +12,7 @@
 @import "./components/main_about";
 @import "./components/main_content";
 @import "./components/main_gallery";
+@import "./components/link_btn";
 @import "./components/buttons";
 @import "./components/medium_card";
 @import "./components/pagination";
@@ -28,6 +29,7 @@
 @import "./layout/footer";
 
 // PAGES
+@import "./pages/main";
 @import "./pages/article";
 @import "./pages/common";
 @import "./pages/member";

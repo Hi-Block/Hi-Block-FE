@@ -155,7 +155,7 @@ textarea::-webkit-outer-spin-button {
   align-items: center;
   flex-direction: column;
   text-align: left;
-  margin: 5rem 3rem 15rem;
+  margin: 3rem 6rem 0rem;
 }
 .main-title-area .common-inner {
   width: 100%;
@@ -180,7 +180,7 @@ textarea::-webkit-outer-spin-button {
 .main-title-area .common-inner .about-area {
   display: flex;
   flex-direction: row;
-  height: 170px;
+  height: 100%;
 }
 
 .main-about-area {
@@ -189,7 +189,7 @@ textarea::-webkit-outer-spin-button {
   display: relative;
   justify-content: space-between;
   flex-direction: column;
-  margin: 5rem;
+  margin: 0rem;
 }
 .main-about-area .common-inner {
   width: 100%;
@@ -232,34 +232,27 @@ textarea::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 2rem;
+  gap: 6rem;
 }
 .main-content .left-content-area {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35rem;
 }
 .main-content .right-content-area {
   width: 100%;
-}
-.main-content .gallery-text {
   display: flex;
   flex-direction: column;
+  gap: 18rem;
 }
-.main-content .gallery-text .text-title {
-  color: #000000;
-  font-size: 1rem;
-  font-weight: 300;
-}
-.main-content .gallery-text .text-body {
-  color: #4E5968;
-  font-size: 0.5rem;
-  font-weight: 100;
-}
+
 .main-gallery {
   height: auto;
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 .main-gallery .main-image {
   width: 100%;
@@ -280,9 +273,59 @@ textarea::-webkit-outer-spin-button {
 }
 .main-gallery .gallery-text .text-body {
   color: #4E5968;
-  font-size: 0.5rem;
+  font-size: 1rem;
   font-weight: 100;
+  font-family: "Noto Sans KR", serif;
 }
+.main-gallery .gallery-link-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.link-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.link-btn .link-text {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Roboto", serif;
+  color: #4E5968;
+}
+
+.link-image {
+  display: block;
+  margin: auto auto auto 0px;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.big-link-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.big-link-btn .big-link-text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Roboto", serif;
+  color: #4E5968;
+}
+.big-link-btn .big-link-image {
+  display: block;
+  margin: auto auto auto 0px;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .btn-language {
   padding-left: 8px;
   padding-right: 8px;
@@ -765,6 +808,13 @@ textarea::-webkit-outer-spin-button {
   width: 2rem;
   height: 2rem;
   align-items: center;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
 }
 
 .Article {

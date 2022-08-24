@@ -4,7 +4,7 @@ import MainContent from "../components/MainContent";
 
 const Main = () => {
   return (
-    <div>
+    <div className="main">
       <MainTitle />
       <MainAbout />
       <MainContent />

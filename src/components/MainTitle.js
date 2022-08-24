@@ -1,3 +1,5 @@
+import BigLinkBtn from "./BigLinkBtn";
+
 const MainTitle = () => {
   return (
     <div className="main-title-area">
@@ -16,7 +18,7 @@ const MainTitle = () => {
             </div>
           </div>
           <div className="about-area">
-            <span>about</span>
+            <BigLinkBtn text="About" />
           </div>
         </div>
       </div>
