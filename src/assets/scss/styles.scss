@@ -11,6 +11,9 @@
 @import "./components/buttons";
 @import "./components/main_title";
 @import "./components/main_about";
+@import "./components/main_content";
+@import "./components/main_gallery";
+@import "./components/link_btn";
 @import "./components/medium_card";
 @import "./components/pagination";
 @import "./components/profile";
@@ -25,6 +28,7 @@
 @import "./layout/sub_navigation_bar";
 
 // PAGES
+@import "./pages/main";
 @import "./pages/article";
 @import "./pages/common";
 @import "./pages/member";
