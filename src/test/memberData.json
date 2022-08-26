@@ -1,0 +1,76 @@
+{
+    "data" : [
+        {
+            "id" : 1,
+            "eng" : "Kevin",
+            "kor" : "홍성택",
+            "department" : "1기 Development Team",
+            "description" : "CSE 18  |  Front End Developer\nReact.js, Flutter, Solidity",
+            "email" : "mailto:hyblock@gmail.com",
+            "twitter" : "https://twitter.com/",
+            "github" : "https://github.com/",
+            "linkedin" : "https://www.linkedin.com/",
+            "blog" : "https://wwww.google.com/"
+        },
+        {
+            "id" : 2,
+            "eng" : "Jae Bin",
+            "kor" : "김재빈",
+            "department" : "1기 Development Team Leader",
+            "description" : "IS 18  |  Front End Developer\nReact.js, Swift, Solidity",
+            "email" : "mailto:hyblock@gmail.com",
+            "twitter" : "https://twitter.com/",
+            "github" : "https://github.com/",
+            "linkedin" : "https://www.linkedin.com/",
+            "blog" : "https://wwww.google.com/"
+        },
+        {
+            "id" : 3,
+            "eng" : "Pyeong Soo",
+            "kor" : "박평수",
+            "department" : "1기 Development Team",
+            "description" : "IS 18  |  Front End Developer\nReact, Solidity, Javascript",
+            "email" : "mailto:hyblock@gmail.com",
+            "twitter" : "https://twitter.com/",
+            "github" : "https://github.com/",
+            "linkedin" : "https://www.linkedin.com/",
+            "blog" : "https://wwww.google.com/"
+        },
+        {
+            "id" : 4,
+            "eng" : "AAA",
+            "kor" : "에에에",
+            "department" : "1기 Research Team",
+            "description" : "ECON 19  |  Blockchain Researcher\nDe-Fi Specialist\nStatistic Analysis",
+            "email" : "mailto:hyblock@gmail.com",
+            "twitter" : "https://twitter.com/",
+            "github" : "https://github.com/",
+            "linkedin" : "https://www.linkedin.com/",
+            "blog" : "https://wwww.google.com/"
+        },
+        {
+            "id" : 5,
+            "eng" : "Lim Soon Ho",
+            "kor" : "임순호",
+            "department" : "1기 Research Team Leader",
+            "description" : "FIN 19  |  President of HY-BLOCK \nIntern at OOO\nLKL Holdings",
+            "email" : "mailto:hyblock@gmail.com",
+            "twitter" : "https://twitter.com/",
+            "github" : "https://github.com/",
+            "linkedin" : "https://www.linkedin.com/",
+            "blog" : "https://wwww.google.com/"
+        },
+        {
+            "id" : 6,
+            "eng" : "BBB",
+            "kor" : "비비비",
+            "department" : "1기 Development Team",
+            "description" : "MECH 17  |  BLOCKCHAIN RESEARCHER\nsince 2021",
+            "email" : "mailto:hyblock@gmail.com",
+            "twitter" : "https://twitter.com/",
+            "github" : "https://github.com/",
+            "linkedin" : "https://www.linkedin.com/",
+            "blog" : "https://wwww.google.com/"
+        }
+    ]
+}

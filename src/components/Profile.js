@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Profile = () => {
+const Profile = (props) => {
 
 	useEffect(() => {
 		AOS.init();
@@ -14,57 +13,63 @@ const Profile = () => {
 		<div className="card-layout">
 			<div className="card-layout-content">
 				<div className="card-layout-content-name">
-					<div className="card-layout-content-name-eng">Kevin</div>
-					<div className="card-layout-content-name-kor">홍성택</div>
+					<div className="card-layout-content-name-eng">{props.eng}</div>
+					<div className="card-layout-content-name-kor">{props.kor}</div>
 				</div>
 				<div className="card-layout-content-contact">
-					1기 Development Team
+					{props.department}
 				</div>
 				<div className="card-layout-content-description">
-					CSE 18  |  Front End Developer<br/>
-					React.js, Flutter, Solidity
+                    {props.description.split('\n').map(line => {
+                        return (<span className="description-span">{line}<br/></span>)
+                    })}
 				</div>
 				<div class="card-layout-content-social">
-					<Link
+                    <a
                         class='social-icon-link email'
-                        to='/'
+                        href={props.email}
                         target='_blank'
+                        rel="noopener noreferrer"
                         aria-label='email'
                     >
                     <i class="fa fa-envelope"/>
-                    </Link>
-					<Link
+                    </a>
+					<a
                         class='social-icon-link twitter'
-                        to='/'
+                        href={props.twitter}
                         target='_blank'
+                        rel="noopener noreferrer"
                         aria-label='Twitter'
                     >
 					<i class='fab fa-twitter' />
-                    </Link>
-					<Link
+                    </a>
+					<a
                         class='social-icon-link github'
-                        to='/'
+                        href={props.github}
                         target='_blank'
+                        rel="noopener noreferrer"
                         aria-label='GitHub'
                     >
                     <i class="fab fa-github"/>
-                    </Link>
-					<Link
+                    </a>
+					<a
                         class='social-icon-link linkedin'
-                        to='/'
+                        href={props.linkedin}
                         target='_blank'
+                        rel="noopener noreferrer"
                         aria-label='LinkedIn'
                     >
                     <i class="fab fa-linkedin-in"/>
-                    </Link>
-					<Link
+                    </a>
+					<a
                         class='social-icon-link web'
-                        to='/'
+                        href={props.blog}
                         target='_blank'
+                        rel="noopener noreferrer"
                         aria-label='Web'
                     >
                     <i class="fas fa-globe"/>
-                    </Link>
+                    </a>
 				</div>
 			</div>
 		</div>

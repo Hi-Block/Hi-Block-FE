@@ -62,7 +62,10 @@
 				font-weight: 300;
 				font-size: 0.8rem;
 				margin: 0 0 0.75rem;
-				word-wrap: break-word;
+				
+				.description-span{
+					word-wrap: break-word;
+				}
 			}
 
 			.card-layout-content-social{
