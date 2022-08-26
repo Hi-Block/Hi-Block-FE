@@ -1,0 +1,21 @@
+.main-content {
+  height: auto;
+  background: $block-color-bg1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 6rem;
+
+  .left-content-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35rem;
+  }
+  .right-content-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18rem;
+  }
+}
