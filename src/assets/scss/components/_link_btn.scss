@@ -1,0 +1,38 @@
+.link-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  .link-text {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $font-eng;
+    color: $block-color-text2;
+  }
+}
+.link-image {
+  display: block;
+  margin: auto auto auto 0px;
+  height: 70%;
+  object-fit: cover;
+}
+.big-link-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  .big-link-text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: $font-eng;
+    color: $block-color-text2;
+  }
+  .big-link-image {
+    display: block;
+    margin: auto auto auto 0px;
+    height: 60%;
+    object-fit: cover;
+  }
+}

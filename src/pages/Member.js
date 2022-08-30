@@ -1,6 +1,10 @@
 import Profile from "../components/Profile";
 
+
 const Member = () => {
+
+
+
     return (
     <>
         <div className="Member">
@@ -19,32 +23,42 @@ const Member = () => {
             <div className="Member-container">
                 <div className="Member-container-wrapper">
                     <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
+                        <Profile
+                            eng="Kevin"
+                            kor="홍성택"
+                            department="1기 DEVELOPMENT TEAM"
+                            description="CSE 18  |  Front End Developer
+                            React.js, Flutter, Solidity"
+                            email="mailto:hyblock@gmail.com"
+                            twitter='https://twitter.com'
+                            github='https://github.com'
+                            linkedin='https://www.linkedin.com'
+                            blog='https://www.naver.com'
+                        />
+                        <Profile
+                            eng="Kevin"
+                            kor="홍성택"
+                            department="1기 DEVELOPMENT TEAM"
+                            description="CSE 18  |  Front End Developer\nReact.js, Flutter, Solidity"
+                            email="mailto:hyblock@gmail.com"
+                            twitter='https://twitter.com'
+                            github='https://github.com'
+                            linkedin='https://linkedin.com'
+                            blog='https://naver.com'
+                        />
                     </ul>
                     <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
-                    </ul>
-                    <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
-                    </ul>
-                    <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
-                    </ul>
-                    <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
-                    </ul>
-                    <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
-                    </ul>
-                    <ul className="Member-container-wrapper-items">
-                        <Profile/>
-                        <Profile/>
+                        <Profile
+                            eng="Kevin"
+                            kor="홍성택"
+                            department="1기 DEVELOPMENT TEAM"
+                            description='CSE 18  |  Front End Developer\nReact.js, Flutter, Solidity'
+                            email="mailto:hyblock@gmail.com"
+                            twitter='https://twitter.com'
+                            github='https://github.com'
+                            linkedin='https://linkedin.com'
+                            blog='https://naver.com'
+                        />
                     </ul>
                 </div> 
             </div>
