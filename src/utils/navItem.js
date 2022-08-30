@@ -1,29 +1,23 @@
 // Header menu item data 
-
 export const navItem = [
     {
         id: 1,
         content: 'Main',
-        address: ''
+        address: '/'
     },
     {
         id: 2,
         content: 'Article',
-        address: 'article'
+        address: '/Article'
     },
     {
         id: 3,
         content: 'Project',
-        address: 'project'
+        address: '/Project'
     },
     {
         id: 4,
         content: 'Member',
-        address: 'member'
-    },
-    {
-        id: 5,
-        content: 'Recruit',
-        address: 'recruit'
-    },
+        address: '/Member'
+    }
 ];

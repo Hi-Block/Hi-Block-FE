@@ -1,5 +1,6 @@
 // Navigation Item mapping with Component 'HeaderNavItem'
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 // COMPONENT
 import Button from "./Button";
@@ -8,8 +9,24 @@ import HeaderNavItem from './HeaderNavItem';
 // UTILS
 import { navItem } from '../utils/navItem';
 
-const Header = () => {
-    
+const Header = () => { 
+    const location = useLocation();
+    const currentPath = JSON.stringify(location.pathname).replace(/"/g, '');
+    const [curPage, setCurPage] = useState('');
+
+    const getAddress = () => {
+        for(let i=0; i<5; i++) {
+            if (currentPath === navItem[i].address) {
+                setCurPage(currentPath);
+                break;
+            }
+        }
+    }
+
+    useEffect(() => {
+        getAddress();
+    }, [location]);
+
     return (
         <header className="header-area">
             <div className="nav-area">
@@ -30,6 +47,7 @@ const Header = () => {
                                     key={it.id}
                                     content={it.content}
                                     address={it.address}
+                                    isActive={it.address === curPage}
                                 />
                             ))}
                         </div>

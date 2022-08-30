@@ -584,6 +584,9 @@ textarea::-webkit-outer-spin-button {
   padding-right: 16px;
   cursor: pointer;
 }
+.header-area .nav-area .nav-bar-left .nav-item-wrapper .nav-item-set .nav-item.is-active {
+  color: #000000;
+}
 .header-area .nav-area .nav-bar-right {
   display: flex;
   justify-content: space-between;
