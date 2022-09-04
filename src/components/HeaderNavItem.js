@@ -17,5 +17,4 @@ const HeaderNavItem = ({ content, address, isActive }) => {
         </button>
     );
 }
-
 export default HeaderNavItem;
