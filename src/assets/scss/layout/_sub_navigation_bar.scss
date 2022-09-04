@@ -15,9 +15,15 @@
         font-size: 20px;
         font-weight: 500;
         color: $block-color-text2;
-    }
+        cursor: pointer;
+        
+        &:first-child {
+            margin-right: 30px;
+        }
 
-    .sub-nav-blank {
-        width: 30px;
+        &.is-active {
+            border-radius: 16px;
+            background-color: $block-color-bg4;
+        }
     }
 }

@@ -1,69 +1,105 @@
-// is-active 속성 정의 (아직 적용x)
 .header-area {
-    top: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(137, 140, 142, 0.85);
+  font-family: $font-eng;
+  z-index: 5000;
+
+  .hy-logo-property {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .meta-logo-property {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    margin: 0rem auto;
+  }
+
+  .nav-area {
     display: flex;
-    justify-content: center;
-    height: 120px;
-    width: 100%;
-    border-bottom: 1px solid rgba(137, 140, 142, 0.85);
-    font-family: $font-eng;
-    z-index: 5000;
-    
-    .nav-area {
+    justify-content: space-between;
+    align-items: center;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    // min-width: 1200px;
+    gap: 25rem;
+    .nav-bar-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 9rem;
+      
+      .img-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        min-width: 1200px;
+      }
+      
 
-        .nav-bar-left {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+      .nav-item-wrapper {
+        .nav-item-set {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+          height: 4rem;
+          gap: 3.5rem;
+          .nav-item {
+            position: relative;
+            font-size: 1rem;
+            color: $block-color-text2;
+            cursor: pointer;
 
-            .img-wrapper {
-                margin-right: 40px;
+            &.is-active {
+                color: $block-color-text1;
             }
+          }
 
-            .nav-item-wrapper {
+          .nav-item:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0.01rem;
+            width: 0%;
+            height: 0.1rem;
+            background: $block-color-text2;
+            transition: all 0.5s;
+          }
 
-                .nav-item-set {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    height: 80px;
+          .nav-item:hover:after {
+            left: 0%;
+            width: 100%;
+          }
 
-                    .nav-item {
-                        font-size: 20px;
-                        color: $block-color-text2;
-                        padding-left: 16px;
-                        padding-right: 16px;
-                        cursor: pointer;
-                        
-                        // &.is-active {
-                        //     color: $block-color-text1;
-                        // }
-                    }
-
-                }
-            }
+          .nav-item:hover {
+            color: $block-color-text1;
+            letter-spacing: -0.0008em;
+            transition: 0.5s;
+          }
         }
-
-        .nav-bar-right {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left: 12px;
-            margin-right: 12px;
-            padding: 0;
-            width: 130px;
-            height: 80px;
-        }
+      }
     }
 
+    .img-item {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $block-color-text3;
+    }
+
+    .nav-bar-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 }

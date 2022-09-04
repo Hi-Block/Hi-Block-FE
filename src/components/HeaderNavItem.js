@@ -1,23 +1,20 @@
 // Header Navigation Menu Items 
-
 import { useNavigate } from "react-router-dom";
 
-const HeaderNavItem = ({ content, address }) => {
+const HeaderNavItem = ({ content, address, isActive }) => {
     const navigate = useNavigate();
-
+    
     const onClickHandler = () => {
         navigate(`${address}`);
-        console.log(`localhost:3000/${address}`);
-    }
+    };
 
     return (
         <button 
-            onClick={onClickHandler} 
-            className="nav-item"
+            className={[isActive ? 'nav-item is-active' : 'nav-item not-active']}
+            onClick={onClickHandler}
         >
             { content }
         </button>
     );
 }
-
 export default HeaderNavItem;
